@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=4 uid="uid://dyx8toyemw2vx"]
+[gd_scene load_steps=106 format=4 uid="uid://dyx8toyemw2vx"]
 
 [ext_resource type="Script" uid="uid://bb15xji6f5syf" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/ScripBase.gd" id="1_f2sr3"]
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_wjmvn"]
@@ -9,11 +9,12 @@
 [ext_resource type="PackedScene" uid="uid://cx3f86a11gutc" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/mapa3/puertadungeon.tscn" id="5_6ha8o"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="5_mv628"]
 [ext_resource type="Texture2D" uid="uid://iptiy3bqigrh" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/presentacion/rosaazul1.png" id="6_4cnrr"]
-[ext_resource type="Texture2D" uid="uid://d03dpfvsapp6u" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/fat_ghost_1_angy_v3(perfect) 100.png" id="6_660ys"]
+[ext_resource type="Texture2D" uid="uid://d03dpfvsapp6u" path="res://personajes/fat_ghost_1_angy_v3(perfect) 100.png" id="6_660ys"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="6_ndujb"]
-[ext_resource type="Texture2D" uid="uid://c0iqt8leqamnx" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/fat_ghost_idle2_.png" id="7_atgg6"]
+[ext_resource type="Texture2D" uid="uid://c0iqt8leqamnx" path="res://personajes/fat_ghost_idle2_.png" id="7_atgg6"]
+[ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="7_bolto"]
 [ext_resource type="PackedScene" uid="uid://xf8f0824nmp5" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/mapa3/espiritu.tscn" id="8_6ha8o"]
-[ext_resource type="PackedScene" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/arbol_11.tscn" id="8_f2sr3"]
+[ext_resource type="PackedScene" uid="uid://bkbyhmwv0v78v" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/arbol_11.tscn" id="8_f2sr3"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="8_w3xtx"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="9_q6p3d"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="10_r8s28"]
@@ -24,11 +25,12 @@
 [ext_resource type="Resource" uid="uid://bp2nw7canjv6m" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/template_stealth_components/template_collected.dialogue" id="17_c1lxt"]
 [ext_resource type="Texture2D" uid="uid://l1euy8xrl78y" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/minigame1boss.png" id="17_ndujb"]
 [ext_resource type="Resource" uid="uid://bqatpvnvfd5xh" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/template_stealth_components/template_stealth.dialogue" id="18_s8djp"]
-[ext_resource type="AudioStream" uid="uid://v5g7lsr5oblg" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/Project_2.wav" id="19_y5vmk"]
 [ext_resource type="AudioStream" uid="uid://c3rgp0fuhl7iu" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/escuela/enemigos/scream-90747 v2.ogg" id="21_s8djp"]
 [ext_resource type="Texture2D" uid="uid://dxgf3yraxbjgk" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/llave 1.png" id="21_v7h05"]
 [ext_resource type="Script" uid="uid://b46ce6fs3hjco" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/llave.gd" id="22_r751j"]
 [ext_resource type="Texture2D" uid="uid://d0yyk0dikkltr" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/estructuras(decoracion)/puertagrande2.png" id="23_r751j"]
+[ext_resource type="AudioStream" uid="uid://bm3fgacq8r5tr" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/Project_2.mp3" id="27_38eo7"]
+[ext_resource type="Script" uid="uid://hs14yse0u0uh" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/music.gd" id="28_38eo7"]
 [ext_resource type="PackedScene" uid="uid://bdtis4ye3hah2" path="res://scenes/quests/story_quests/shjourney/9_shjourney_outro_2/neblina.tscn" id="30_1olun"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gcv0l"]
@@ -541,7 +543,7 @@ zoom = 1.7
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 position = Vector2(0, -1)
-color = Color(0.0899687, 0.433416, 0.641959, 1)
+color = Color(0, 0, 0, 1)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -594,7 +596,7 @@ scale = Vector2(1.5, 1.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="TileMapLayers/Arbustos/Arbusto"]
 show_behind_parent = true
-position = Vector2(-24.6667, -44)
+position = Vector2(-9.99999, -52.6667)
 texture = ExtResource("4_y5vmk")
 
 [node name="Arbusto2" type="Node2D" parent="TileMapLayers/Arbustos"]
@@ -806,7 +808,7 @@ shape = SubResource("RectangleShape2D_gcv0l")
 show_behind_parent = true
 light_mask = 2
 visibility_layer = 1047554
-position = Vector2(289, 3601)
+position = Vector2(227, 3532)
 
 [node name="Sprite2D" type="Sprite2D" parent="TileMapLayers/floresazul/RosaAzul1"]
 show_behind_parent = true
@@ -1526,6 +1528,10 @@ editor_draw_limits = true
 [node name="AudioListener2D" type="AudioListener2D" parent="Player/Camera2D"]
 current = true
 
+[node name="Node2D" parent="Player" instance=ExtResource("7_bolto")]
+position = Vector2(3, -21)
+scale = Vector2(5, 5)
+
 [node name="EnemyGuards" type="Node2D" parent="."]
 y_sort_enabled = true
 position = Vector2(13, -29)
@@ -1616,6 +1622,7 @@ position = Vector2(287, 3572)
 dialogue = ExtResource("14_f2sr3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint4"]
+z_index = -2
 position = Vector2(1, -2)
 shape = SubResource("RectangleShape2D_idy4y")
 debug_color = Color(0, 0, 0, 0.42)
@@ -1690,10 +1697,9 @@ volume_db = 2.5
 
 [node name="Music" type="Node2D" parent="."]
 
-[node name="Musica" type="AudioStreamPlayer" parent="Music"]
-stream = ExtResource("19_y5vmk")
-autoplay = true
-max_polyphony = 4
+[node name="Music" type="AudioStreamPlayer2D" parent="Music"]
+stream = ExtResource("27_38eo7")
+script = ExtResource("28_38eo7")
 
 [node name="Puerta" type="StaticBody2D" parent="."]
 show_behind_parent = true
