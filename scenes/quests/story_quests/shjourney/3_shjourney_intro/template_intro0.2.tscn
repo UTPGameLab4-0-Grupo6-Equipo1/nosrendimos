@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://djrxlfp43b7pt"]
+[gd_scene load_steps=41 format=4 uid="uid://djrxlfp43b7pt"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_mtosg"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="2_5gqe7"]
@@ -16,6 +16,14 @@
 [ext_resource type="AudioStream" uid="uid://tjog7m8qdm7b" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/template_intro_components/EffectSounds/Project_1 (1).wav" id="14_4184i"]
 [ext_resource type="Script" uid="uid://3tn8210agfwf" path="res://scenes/quests/story_quests/shjourney/3_shjourney_intro/area_2d.gd" id="14_u3mgm"]
 [ext_resource type="PackedScene" uid="uid://bdtis4ye3hah2" path="res://scenes/quests/story_quests/shjourney/9_shjourney_outro_2/neblina.tscn" id="16_iptbp"]
+[ext_resource type="PackedScene" uid="uid://buuh0p3bjdpkv" path="res://scenes/game_elements/props/hint/input_key/input_key.tscn" id="17_u8380"]
+[ext_resource type="Texture2D" uid="uid://dwloomqbao5j1" path="res://assets/third_party/inputs/keyboard-and-mouse/Light/Arrow_Left_Key_Light.png" id="18_4ek3l"]
+[ext_resource type="Script" uid="uid://d4bfnn5upde7h" path="res://scenes/game_elements/props/hint/input_key/input_key.gd" id="19_4ek3l"]
+[ext_resource type="Texture2D" uid="uid://bhtf0ipgfttv4" path="res://assets/third_party/inputs/keyboard-and-mouse/Light/Arrow_Right_Key_Light.png" id="19_6ltfn"]
+[ext_resource type="Texture2D" uid="uid://qkedw0kou5j8" path="res://assets/third_party/inputs/keyboard-and-mouse/Light/Arrow_Down_Key_Light.png" id="21_x6v85"]
+[ext_resource type="Texture2D" uid="uid://nm4n8vqpggij" path="res://assets/third_party/inputs/keyboard-and-mouse/Light/Arrow_Up_Key_Light.png" id="22_0hk53"]
+[ext_resource type="Texture2D" uid="uid://hpwnbj0t3i1u" path="res://assets/third_party/inputs/keyboard-and-mouse/Light/Shift_Key_Light.png" id="22_03p8r"]
+[ext_resource type="Theme" uid="uid://coxcra1002kil" path="res://scenes/ui_elements/shared_components/theme.tres" id="23_4ek3l"]
 
 [sub_resource type="Curve2D" id="Curve2D_s8exg"]
 _data = {
@@ -496,7 +504,6 @@ position = Vector2(0, -1.33333)
 texture = ExtResource("13_03851")
 
 [node name="Node2D5" parent="RosaAzul1" instance=ExtResource("2_5gqe7")]
-visible = false
 modulate = Color(0, 0, 1, 1)
 self_modulate = Color(0, 0, 0.443137, 1)
 position = Vector2(0.0500488, 8.8313)
@@ -529,10 +536,98 @@ position = Vector2(1202.31, -11.6084)
 [node name="Node2D5" parent="." instance=ExtResource("2_5gqe7")]
 modulate = Color(0, 0, 1, 1)
 self_modulate = Color(0, 0, 0.443137, 1)
+z_index = -3
 position = Vector2(1018, 142)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("16_iptbp")]
 scale = Vector2(3.7, 3.7)
 transform = Transform2D(3.7, 0, 0, 3.7, 0, 0)
+
+[node name="MovementInputHints" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 324.0
+offset_top = 875.0
+offset_right = 324.0
+offset_bottom = 875.0
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="LeftInput" parent="MovementInputHints" instance=ExtResource("17_u8380")]
+layout_mode = 0
+offset_left = 6.66666
+offset_top = -300.0
+offset_right = 106.667
+offset_bottom = -200.0
+scale = Vector2(0.836696, 0.700823)
+texture = ExtResource("18_4ek3l")
+
+[node name="RightInput" type="TextureRect" parent="MovementInputHints"]
+layout_mode = 0
+offset_left = 142.667
+offset_top = -299.334
+offset_right = 242.667
+offset_bottom = -199.334
+scale = Vector2(0.836696, 0.700823)
+texture = ExtResource("19_6ltfn")
+script = ExtResource("19_4ek3l")
+action_name = &"ui_right"
+
+[node name="DownInput" type="TextureRect" parent="MovementInputHints"]
+layout_mode = 0
+offset_left = 74.6667
+offset_top = -298.667
+offset_right = 174.667
+offset_bottom = -198.667
+scale = Vector2(0.836696, 0.700823)
+texture = ExtResource("21_x6v85")
+script = ExtResource("19_4ek3l")
+action_name = &"ui_down"
+
+[node name="UpInput" type="TextureRect" parent="MovementInputHints"]
+layout_mode = 0
+offset_left = 74.6666
+offset_top = -355.333
+offset_right = 174.667
+offset_bottom = -255.333
+scale = Vector2(0.836696, 0.700823)
+texture = ExtResource("22_0hk53")
+script = ExtResource("19_4ek3l")
+action_name = &"ui_up"
+
+[node name="InteractInput" type="TextureRect" parent="."]
+offset_left = 671.0
+offset_top = 432.0
+offset_right = 794.0
+offset_bottom = 532.0
+texture = ExtResource("22_03p8r")
+script = ExtResource("19_4ek3l")
+action_name = &"running"
+
+[node name="Label" type="Label" parent="InteractInput"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 30.0
+offset_right = 300.0
+offset_bottom = 66.0
+theme = ExtResource("23_4ek3l")
+theme_type_variation = &"HintLabel"
+text = "Correr"
+
+[node name="ScreenOverlay2" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="InteractionInputHint" type="Control" parent="ScreenOverlay2"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 521.0
+offset_top = 479.0
+offset_right = 521.0
+offset_bottom = 479.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 8
+size_flags_vertical = 8
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
