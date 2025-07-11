@@ -1,4 +1,4 @@
-[gd_scene load_steps=106 format=4 uid="uid://dyx8toyemw2vx"]
+[gd_scene load_steps=107 format=4 uid="uid://dyx8toyemw2vx"]
 
 [ext_resource type="Script" uid="uid://bb15xji6f5syf" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/ScripBase.gd" id="1_f2sr3"]
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_wjmvn"]
@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://cx3f86a11gutc" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/mapa3/puertadungeon.tscn" id="5_6ha8o"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="5_mv628"]
 [ext_resource type="Texture2D" uid="uid://iptiy3bqigrh" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/presentacion/rosaazul1.png" id="6_4cnrr"]
-[ext_resource type="Texture2D" uid="uid://d03dpfvsapp6u" path="res://personajes/fat_ghost_1_angy_v3(perfect) 100.png" id="6_660ys"]
+[ext_resource type="Texture2D" uid="uid://d03dpfvsapp6u" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/fat_ghost_1_angy_v3(perfect) 100.png" id="6_660ys"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="6_ndujb"]
-[ext_resource type="Texture2D" uid="uid://c0iqt8leqamnx" path="res://personajes/fat_ghost_idle2_.png" id="7_atgg6"]
+[ext_resource type="Texture2D" uid="uid://c0iqt8leqamnx" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/fat_ghost_idle2_.png" id="7_atgg6"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="7_bolto"]
 [ext_resource type="PackedScene" uid="uid://xf8f0824nmp5" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/mapa3/espiritu.tscn" id="8_6ha8o"]
 [ext_resource type="PackedScene" uid="uid://bkbyhmwv0v78v" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/arbol_11.tscn" id="8_f2sr3"]
@@ -30,7 +30,8 @@
 [ext_resource type="Script" uid="uid://b46ce6fs3hjco" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/llave.gd" id="22_r751j"]
 [ext_resource type="Texture2D" uid="uid://d0yyk0dikkltr" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/estructuras(decoracion)/puertagrande2.png" id="23_r751j"]
 [ext_resource type="AudioStream" uid="uid://bm3fgacq8r5tr" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/Project_2.mp3" id="27_38eo7"]
-[ext_resource type="Script" uid="uid://hs14yse0u0uh" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/music.gd" id="28_38eo7"]
+[ext_resource type="Script" uid="uid://blds02f7sdck1" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/music.gd" id="29_a7iuo"]
+[ext_resource type="AudioStream" uid="uid://v5g7lsr5oblg" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/Project_2.wav" id="29_lldb0"]
 [ext_resource type="PackedScene" uid="uid://bdtis4ye3hah2" path="res://scenes/quests/story_quests/shjourney/9_shjourney_outro_2/neblina.tscn" id="30_1olun"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gcv0l"]
@@ -1695,11 +1696,15 @@ one_shot = true
 stream = ExtResource("21_s8djp")
 volume_db = 2.5
 
-[node name="Music" type="Node2D" parent="."]
+[node name="Sounds" type="Node2D" parent="."]
 
-[node name="Music" type="AudioStreamPlayer2D" parent="Music"]
+[node name="Ambiente" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource("27_38eo7")
-script = ExtResource("28_38eo7")
+
+[node name="Musica" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("29_lldb0")
+autoplay = true
+script = ExtResource("29_a7iuo")
 
 [node name="Puerta" type="StaticBody2D" parent="."]
 show_behind_parent = true
