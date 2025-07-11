@@ -139,11 +139,18 @@ sprite_frames = ExtResource("4_l82d5")
 position = Vector2(370.992, -54.1985)
 scale = Vector2(0.763359, 0.763359)
 zoom = Vector2(1.5, 1.5)
+limit_left = -100
 limit_top = -328
 limit_right = 1224
 limit_bottom = 392
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Node2D" parent="OnTheGround/Player" instance=ExtResource("11_inexp")]
+modulate = Color(0, 0.0901961, 1, 1)
+self_modulate = Color(0, 0, 0.701961, 1)
+position = Vector2(5, -25)
+scale = Vector2(5.625, 5.625)
 
 [node name="ThrowingNPC3" parent="OnTheGround" instance=ExtResource("5_xtx35")]
 texture_filter = 1
