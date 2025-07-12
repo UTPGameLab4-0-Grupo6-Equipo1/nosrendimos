@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://detarlsgchyx3"]
+[gd_scene load_steps=30 format=4 uid="uid://detarlsgchyx3"]
 
 [ext_resource type="Script" uid="uid://26ek2v5te65d" path="res://scenes/game_logic/fill_game_logic2.gd" id="1_ymgo3"]
 [ext_resource type="TileSet" uid="uid://cff3wffsnp02" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/tilesetMinijuego03.tres" id="2_l82d5"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://p8kty3uxifxu" path="res://assets/third_party/inputs/keyboard-and-mouse/Dark/Space_Key_Dark.png" id="15_l82d5"]
 [ext_resource type="Script" uid="uid://d4bfnn5upde7h" path="res://scenes/game_elements/props/hint/input_key/input_key.gd" id="16_khbdt"]
 [ext_resource type="Theme" uid="uid://coxcra1002kil" path="res://scenes/ui_elements/shared_components/theme.tres" id="17_5kk5x"]
+[ext_resource type="Script" uid="uid://blds02f7sdck1" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/music.gd" id="19_jqvha"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jqvha"]
 shader = ExtResource("4_ydosg")
@@ -230,7 +231,7 @@ color = Color(0, 0, 0, 1)
 color = Color(0.43479, 0.194236, 0.271325, 1)
 
 [node name="Node2D" parent="Oscurecer" instance=ExtResource("11_inexp")]
-position = Vector2(352, -224)
+position = Vector2(352, -225)
 scale = Vector2(5.625, 5.625)
 
 [node name="Node2D2" parent="Oscurecer" instance=ExtResource("11_inexp")]
@@ -244,5 +245,6 @@ stream = ExtResource("12_api73")
 volume_db = -6.275
 autoplay = true
 parameters/looping = true
+script = ExtResource("19_jqvha")
 
 [connection signal="goal_reached" from="FillGameLogic2" to="OnTheGround/CollectibleItem" method="reveal"]
