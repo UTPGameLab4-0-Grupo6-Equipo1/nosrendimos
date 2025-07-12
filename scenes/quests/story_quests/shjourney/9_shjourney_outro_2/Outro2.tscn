@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://bbycgeap2ue87"]
+[gd_scene load_steps=25 format=4 uid="uid://bbycgeap2ue87"]
 
 [ext_resource type="TileSet" uid="uid://birttlb0sk74i" path="res://scenes/quests/story_quests/shjourney/8_shjourney_outro/tilesetOutro.tres" id="1_th25k"]
 [ext_resource type="Texture2D" uid="uid://bolr7wf3qumf1" path="res://scenes/quests/story_quests/shjourney/3_shjourney_intro/template_intro_components/assets_utilizables/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Buildings/Black Buildings/House2.png" id="2_cmmwh"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://uru8f5jj8nvo" path="res://scenes/ui_elements/cinematic/cinematicOutro2.gd" id="13_oxm0q"]
 [ext_resource type="PackedScene" uid="uid://bdtis4ye3hah2" path="res://scenes/quests/story_quests/shjourney/9_shjourney_outro_2/neblina.tscn" id="14_c0323"]
 [ext_resource type="Resource" uid="uid://x54tngxeume7" path="res://scenes/quests/story_quests/shjourney/9_shjourney_outro_2/Dialogos/finaldiaalogo.dialogue" id="14_oxm0q"]
+[ext_resource type="Script" uid="uid://blds02f7sdck1" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/music.gd" id="15_f0pqt"]
 
 [sub_resource type="Animation" id="Animation_c0323"]
 length = 0.001
@@ -541,10 +542,12 @@ metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Ambiente" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource("13_cpr3a")
+script = ExtResource("15_f0pqt")
 
 [node name="Musica" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource("13_cpr3a")
 autoplay = true
+script = ExtResource("15_f0pqt")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("14_c0323")]
 scale = Vector2(3.7, 3.7)

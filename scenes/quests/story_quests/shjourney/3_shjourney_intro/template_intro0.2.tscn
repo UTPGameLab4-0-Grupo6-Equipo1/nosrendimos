@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://djrxlfp43b7pt"]
+[gd_scene load_steps=42 format=4 uid="uid://djrxlfp43b7pt"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_mtosg"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="2_5gqe7"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="10_tm8dh"]
 [ext_resource type="Texture2D" uid="uid://ceplpkp27hls8" path="res://scenes/quests/story_quests/shjourney/Otros_componentes/AssetsShJourney/rock_2.png" id="11_o1c63"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="12_oectw"]
+[ext_resource type="Script" uid="uid://blds02f7sdck1" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/music.gd" id="13_6ltfn"]
 [ext_resource type="Texture2D" uid="uid://iptiy3bqigrh" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/personajes/presentacion/rosaazul1.png" id="13_03851"]
 [ext_resource type="Resource" uid="uid://clids2yxtwplq" path="res://scenes/quests/story_quests/shjourney/3_shjourney_intro/template_intro_components/checkpoint2.0.dialogue" id="13_4184i"]
 [ext_resource type="AudioStream" uid="uid://dggqjf1ectyqc" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/template_intro_components/EffectSounds/bosque-66633.mp3" id="13_h884j"]
@@ -405,6 +406,7 @@ stream = ExtResource("13_h884j")
 [node name="Musica" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource("14_4184i")
 autoplay = true
+script = ExtResource("13_6ltfn")
 
 [node name="Checkpoint" parent="." instance=ExtResource("12_oectw")]
 position = Vector2(2542.59, 2073.06)
