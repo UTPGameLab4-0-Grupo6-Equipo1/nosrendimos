@@ -1,13 +1,13 @@
 [gd_scene load_steps=20 format=4 uid="uid://bb1mgn8l00yo7"]
 
-[ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_510kx"]
+[ext_resource type="TileSet" uid="uid://bcx22clccr7qe" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/tilesetIntro02.tres" id="2_u7gwd"]
 [ext_resource type="Shader" uid="uid://bvb4l5wskqwhf" path="res://scenes/quests/story_quests/shjourney/3_shjourney_intro/intro0.2.gdshader" id="3_0bl5u"]
-[ext_resource type="SpriteFrames" uid="uid://vwf8e1v8brdp" path="res://scenes/quests/story_quests/template/template_player_components/template_player.tres" id="3_ens4f"]
+[ext_resource type="SpriteFrames" uid="uid://bl21p5aynixwq" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/Personajes/Tim/template_playerTim.tres" id="4_0bl5u"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_ug0ds"]
-[ext_resource type="Resource" uid="uid://cqjngitoc5yx7" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_intro.dialogue" id="5_13cgc"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="5_gilgp"]
 [ext_resource type="Texture2D" uid="uid://ceplpkp27hls8" path="res://scenes/quests/story_quests/shjourney/Otros_componentes/AssetsShJourney/rock_2.png" id="6_hv65c"]
 [ext_resource type="PackedScene" uid="uid://bmih4w66b6t36" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/Personajes/elfo_del_bosque_ojos_iluminados.tscn" id="6_iu8xy"]
+[ext_resource type="Resource" uid="uid://c5d8ip4lqme83" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/Dialogo/template_intro02.dialogue" id="7_1kvnf"]
 [ext_resource type="AudioStream" uid="uid://dggqjf1ectyqc" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/template_intro_components/EffectSounds/bosque-66633.mp3" id="8_24bgd"]
 [ext_resource type="Script" uid="uid://bwoen7e8503tp" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/audio_stream_player_2d.gd" id="9_jw5ur"]
 [ext_resource type="AudioStream" uid="uid://tjog7m8qdm7b" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/template_intro_components/EffectSounds/Project_1 (1).wav" id="10_khe72"]
@@ -216,13 +216,13 @@ texture_filter = 1
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers"]
 position = Vector2(-35, -208)
 tile_map_data = PackedByteArray("AAAAAAMAEwAAAAAAAAAAAAQAEwAAAAAAAAAAAAUAEwAAAAAAAAAAAAYAEwAAAAAAAAAAAAcAEwAAAAAAAAABAAMAEwAAAAAAAAABAAQAEwAAAAAAAAABAAUAEwAAAAAAAAABAAYAEwAAAAAAAAABAAcAEwAAAAAAAAACAAMAEwAAAAAAAAACAAQAEwAAAAAAAAACAAUAEwAAAAAAAAACAAYAEwAAAAAAAAACAAcAEwAAAAAAAAADAAMAEwAAAAAAAAADAAQAEwAAAAAAAAADAAUAEwAAAAAAAAADAAYAEwAAAAAAAAADAAcAEwAAAAAAAAAEAAMAEwAAAAAAAAAEAAQAEwAAAAAAAAAEAAUAEwAAAAAAAAAEAAYAEwACAAEAAAAEAAcAEwAAAAAAAAAFAAMAEwACAAEAAAAFAAQAEwAAAAEAAAAFAAUAEwAAAAAAAAAFAAYAEwAAAAAAAAAFAAcAEwAAAAAAAAAGAAMAEwAAAAEAAAAGAAQAEwAAAAAAAAAGAAYAEwAAAAAAAAAGAAcAEwAAAAAAAAAHAAMAEwAAAAEAAAAHAAQAEwAAAAAAAAAHAAYAEwAAAAAAAAAHAAcAEwAAAAEAAAAIAAMAEwAAAAAAAAAIAAQAEwAAAAAAAAAIAAUAEwAAAAAAAAAIAAYAEwAAAAAAAAAIAAcAEwAAAAAAAAAJAAMAEwAAAAAAAAAJAAQAEwAAAAAAAAAJAAYAEwAAAAAAAAAJAAcAEwACAAEAAAAKAAMAEwAAAAAAAAAKAAQAEwAAAAAAAAAKAAUAEwAAAAAAAAAKAAYAEwAAAAAAAAAKAAcAEwAAAAAAAAALAAMAEwAAAAAAAAALAAQAEwAAAAAAAAALAAUAEwAAAAAAAAALAAYAEwAAAAAAAAALAAcAEwAAAAAAAAAMAAMAEwAAAAAAAAAMAAQAEwAAAAAAAAAMAAUAEwAAAAAAAAAMAAYAEwAAAAAAAAAMAAcAEwAAAAAAAAANAAMAEwAAAAAAAAANAAQAEwAAAAAAAAANAAYAEwAAAAAAAAANAAcAEwAAAAAAAAAHAAUAEwAAAAAAAAAJAAUAEwAAAAAAAAANAAUAEwAAAAAAAAAGAAUAEwACAAEAAAAAAAgAEwAAAAAAAAAAAAkAEwAAAAAAAAAAAAoAEwAAAAAAAAAAAAsAEwAAAAAAAAAAAAwAEwAAAAAAAAAAAA0AEwAAAAAAAAAAAA4AEwAAAAAAAAABAAgAEwAAAAAAAAABAAkAEwAAAAAAAAABAAoAEwAAAAAAAAABAAsAEwAAAAAAAAABAAwAEwAAAAAAAAABAA0AEwAAAAAAAAABAA4AEwACAAEAAAACAAgAEwAAAAAAAAACAAkAEwAAAAAAAAACAAoAEwAAAAAAAAACAAsAEwAAAAAAAAACAAwAEwAAAAAAAAACAA0AEwAAAAAAAAACAA4AEwAAAAAAAAADAAgAEwAAAAAAAAADAAkAEwAAAAAAAAADAAoAEwAAAAAAAAADAAsAEwAAAAAAAAADAAwAEwAAAAAAAAADAA0AEwAAAAAAAAADAA4AEwAAAAAAAAAEAAgAEwAAAAAAAAAEAAkAEwAAAAAAAAAEAAoAEwAAAAAAAAAEAAsAEwAAAAAAAAAEAAwAEwAAAAAAAAAEAA0AEwAAAAAAAAAEAA4AEwAAAAAAAAAFAAgAEwAAAAAAAAAFAAkAEwADAAAAAAAFAAoAEwAAAAAAAAAFAAsAEwAAAAAAAAAFAAwAEwAAAAAAAAAFAA0AEwAAAAAAAAAFAA4AEwACAAEAAAAGAAgAEwAAAAEAAAAGAAkAEwAAAAEAAAAGAAoAEwAAAAAAAAAGAAsAEwAAAAAAAAAGAAwAEwAAAAAAAAAGAA0AEwAAAAAAAAAGAA4AEwAAAAAAAAAHAAgAEwAAAAAAAAAHAAkAEwAAAAAAAAAHAAoAEwAAAAAAAAAHAAsAEwAAAAAAAAAHAAwAEwAAAAAAAAAHAA0AEwAAAAAAAAAHAA4AEwAAAAAAAAAIAAgAEwAAAAAAAAAIAAkAEwAAAAAAAAAIAAoAEwAAAAAAAAAIAAsAEwAAAAAAAAAIAAwAEwAAAAAAAAAIAA0AEwAAAAAAAAAIAA4AEwAAAAAAAAAJAAgAEwAAAAEAAAAJAAkAEwAAAAAAAAAJAAoAEwAAAAAAAAAJAAsAEwAAAAAAAAAJAAwAEwAAAAAAAAAJAA0AEwAAAAAAAAAJAA4AEwAAAAAAAAAKAAgAEwAAAAAAAAAKAAkAEwAAAAAAAAAKAAoAEwAAAAAAAAAKAAsAEwAAAAAAAAAKAAwAEwAAAAAAAAAKAA0AEwAAAAAAAAAKAA4AEwAAAAAAAAALAAgAEwAAAAAAAAALAAkAEwAAAAAAAAALAAoAEwAAAAAAAAALAAsAEwAAAAAAAAALAAwAEwAAAAAAAAALAA0AEwAAAAAAAAALAA4AEwAAAAAAAAAMAAgAEwAAAAAAAAAMAAkAEwAAAAAAAAAMAAoAEwAAAAAAAAAMAAsAEwAAAAAAAAAMAAwAEwADAAEAAAAMAA0AEwAAAAAAAAAMAA4AEwADAAEAAAANAAgAEwACAAEAAAANAAkAEwAAAAAAAAANAAoAEwAAAAAAAAANAAsAEwAAAAAAAAANAAwAEwAAAAAAAAANAA0AEwAAAAAAAAANAA4AEwAAAAAAAAAOAAMAEwAAAAAAAAAOAAQAEwAAAAAAAAAOAAUAEwAAAAAAAAAOAAYAEwAAAAAAAAAOAAcAEwAAAAAAAAAOAAgAEwAAAAAAAAAOAAkAEwAAAAAAAAAOAAoAEwAAAAAAAAAOAAsAEwAAAAAAAAAOAAwAEwAAAAAAAAAOAA0AEwAAAAAAAAAOAA4AEwAAAAAAAAAPAAMAEwAAAAAAAAAPAAQAEwAAAAAAAAAPAAUAEwAAAAAAAAAPAAYAEwAAAAAAAAAPAAcAEwAAAAAAAAAPAAgAEwAAAAAAAAAPAAkAEwAAAAAAAAAPAAoAEwAAAAAAAAAPAAsAEwAAAAAAAAAPAAwAEwAAAAAAAAAPAA0AEwAAAAAAAAAPAA4AEwAAAAAAAAAQAAMAEwAAAAAAAAAQAAQAEwAAAAAAAAAQAAUAEwAAAAAAAAAQAAYAEwAAAAAAAAAQAAcAEwAAAAAAAAAQAAgAEwAAAAAAAAAQAAkAEwAAAAAAAAAQAAoAEwAAAAAAAAAQAAsAEwADAAEAAAAQAAwAEwAAAAAAAAAQAA0AEwAAAAAAAAAQAA4AEwAAAAAAAAA=")
-tile_set = ExtResource("1_510kx")
+tile_set = ExtResource("2_u7gwd")
 
 [node name="Ground2" type="TileMapLayer" parent="TileMapLayers/Sand"]
 position = Vector2(-1065, -221)
 scale = Vector2(1.865, 1.865)
 tile_map_data = PackedByteArray("AAALAAYAFwADAAAAAAA=")
-tile_set = ExtResource("1_510kx")
+tile_set = ExtResource("2_u7gwd")
 
 [node name="ElfoDelBosque" parent="TileMapLayers/Sand" instance=ExtResource("6_iu8xy")]
 position = Vector2(279, 612)
@@ -233,20 +233,20 @@ frame_progress = 0.0
 position = Vector2(-712, -380)
 scale = Vector2(1.865, 1.865)
 tile_map_data = PackedByteArray("AAALAAYAFwADAAAAAAAKAAQAEwAAAAEAAAAJAAQAEwAAAAEAAAAIAAQAEwAAAAEAAAAHAAQAEwAAAAEAAAALAAQAEwAAAAEAAAAMAAQAEwAAAAEAAAANAAQAEwAAAAEAAAAGAAQAEwAAAAEAAAAOAAQAEwAAAAEAAAA=")
-tile_set = ExtResource("1_510kx")
+tile_set = ExtResource("2_u7gwd")
 
 [node name="Ground" type="TileMapLayer" parent="TileMapLayers/Sand"]
 material = SubResource("ShaderMaterial_u7gwd")
 position = Vector2(-28, 58)
 scale = Vector2(1.625, 1.625)
 tile_map_data = PackedByteArray("AAACAAEAFgAAAAAAAAACAAIAFgAAAAAAAAABAAIAFgAAAAAAAAABAAMAFgAFAAAAAAACAAQAFgAFAAAAAAABAAUAFgAFAAAAAAABAAYAFgAFAAAAAAADAAYAFgAFAAAAAAACAAUAFgAFAAAAAAACAAcAFgAFAAAAAAAIAAQAFgAJAAAAAAAJAAMAFgAJAAAAAAAIAAIAFgAJAAAAAAAJAAIAFgAJAAAAAAAHAAMAFgAFAAAAAAAIAAMAFgAFAAAAAAAHAAEAFgAFAAAAAAAJAAEAFgAFAAAAAAAIAAEAFgAFAAAAAAAIAAUAFgAFAAAAAAAJAAUAFgAFAAAAAAAHAAUAFgAFAAAAAAAJAAcAFgAFAAAAAAAHAAYAFgAFAAAAAAAIAAcAFgADAAYAAAAIAAYAFgADAAYAAAAHAAcAFgADAAYAAAAFAAIAEwAAAAMAADAFAAMAEwABAAMAAAAFAAUAEwACAAMAAAAEAAYAEwACAAMAAAAFAAcAEwACAAMAAAAFAAYAEwADAAIAAFAFAAgAEwADAAIAAFACAAMAFQAKAAYAAAAEAAIAFQAKAAYAAAA=")
-tile_set = ExtResource("1_510kx")
+tile_set = ExtResource("2_u7gwd")
 
 [node name="Ground4" type="TileMapLayer" parent="TileMapLayers/Sand"]
-position = Vector2(-884, 43)
+position = Vector2(-917, 45)
 scale = Vector2(1.865, 1.865)
 tile_map_data = PackedByteArray("AAALAAYAFwADAAAAAAANAAAAFgAAAAAAAAAMAAAAFgAAAAAAAAALAAAAFgAAAAAAAAAKAAAAFgAAAAAAAAAKAAEAFgAAAAAAAAAMAAEAFgAAAAAAAAA=")
-tile_set = ExtResource("1_510kx")
+tile_set = ExtResource("2_u7gwd")
 
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -254,7 +254,7 @@ y_sort_enabled = true
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(506, -132.86)
 scale = Vector2(1.32, 1.32)
-sprite_frames = ExtResource("3_ens4f")
+sprite_frames = ExtResource("4_0bl5u")
 animation = &"idle"
 autoplay = "idle"
 offset = Vector2(0, 146.255)
@@ -274,7 +274,7 @@ libraries = {
 
 [node name="Cinematic" type="Node2D" parent="." node_paths=PackedStringArray("animation_player")]
 script = ExtResource("4_ug0ds")
-dialogue = ExtResource("5_13cgc")
+dialogue = ExtResource("7_1kvnf")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
 next_scene = "uid://djrxlfp43b7pt"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
