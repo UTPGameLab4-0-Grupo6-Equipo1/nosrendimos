@@ -1,6 +1,6 @@
-[gd_scene load_steps=30 format=4 uid="uid://detarlsgchyx3"]
+[gd_scene load_steps=31 format=4 uid="uid://detarlsgchyx3"]
 
-[ext_resource type="Script" uid="uid://26ek2v5te65d" path="res://scenes/game_logic/fill_game_logic2.gd" id="1_ymgo3"]
+[ext_resource type="Script" uid="uid://26ek2v5te65d" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/fill_game_logic2.gd" id="1_ymgo3"]
 [ext_resource type="TileSet" uid="uid://cff3wffsnp02" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/tilesetMinijuego03.tres" id="2_l82d5"]
 [ext_resource type="Resource" uid="uid://dnhietnxc72ks" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/template_combat_components/CombateDialogo.dialogue" id="2_ymgo3"]
 [ext_resource type="SpriteFrames" uid="uid://blbgeo0jjttf4" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/template_playerFight.tres" id="4_l82d5"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="6_t000m"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="8_0st60"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="9_14l1t"]
+[ext_resource type="Script" uid="uid://bevtvy586jxuf" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/DemonioSupay/throwing_enemy/components/Supay_Throwing.gd" id="9_lpt11"]
 [ext_resource type="Texture2D" uid="uid://wftkywqu7g0k" path="res://scenes/quests/story_quests/shjourney/7_shjourney_combate/assets/heart_pixelart_64x64_clean_transparent-Sheet.png" id="10_l82d5"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="10_ol34f"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="11_inexp"]
@@ -18,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://p8kty3uxifxu" path="res://assets/third_party/inputs/keyboard-and-mouse/Dark/Space_Key_Dark.png" id="15_l82d5"]
 [ext_resource type="Script" uid="uid://d4bfnn5upde7h" path="res://scenes/game_elements/props/hint/input_key/input_key.gd" id="16_khbdt"]
 [ext_resource type="Theme" uid="uid://coxcra1002kil" path="res://scenes/ui_elements/shared_components/theme.tres" id="17_5kk5x"]
-[ext_resource type="Script" uid="uid://blds02f7sdck1" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/music.gd" id="19_jqvha"]
+[ext_resource type="Script" uid="uid://cm5hbvvpkiw7u" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/Music/music.gd" id="19_jqvha"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jqvha"]
 shader = ExtResource("4_ydosg")
@@ -157,6 +158,7 @@ scale = Vector2(5.625, 5.625)
 texture_filter = 1
 position = Vector2(925, 48)
 scale = Vector2(1.085, 1.085)
+script = ExtResource("9_lpt11")
 throwing_period = 3.5
 projectile_speed = 50.0
 projectile_sprite_frames = ExtResource("6_api73")
