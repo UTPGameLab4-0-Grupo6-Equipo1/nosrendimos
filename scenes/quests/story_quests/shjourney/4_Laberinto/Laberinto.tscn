@@ -1482,7 +1482,10 @@ one_shot = true
 
 [node name="ScreamPlayer" type="AudioStreamPlayer2D" parent="kaenamanto"]
 stream = ExtResource("21_s8djp")
-volume_db = 2.5
+volume_db = 9.904
+
+[node name="Node2D" parent="kaenamanto" instance=ExtResource("7_bolto")]
+scale = Vector2(4.655, 4.655)
 
 [node name="Sounds" type="Node2D" parent="."]
 
