@@ -1,6 +1,6 @@
 [gd_scene load_steps=113 format=3 uid="uid://b8sewsfnsdw4u"]
 
-[ext_resource type="Texture2D" uid="uid://dbsjs5bpkvckp" path="res://scenes/quests/story_quests/shjourney/1_IntroAnimacion/tim y su hermana durmiendo-Sheet.png" id="1_5qws3"]
+[ext_resource type="Texture2D" uid="uid://dbsjs5bpkvckp" path="res://scenes/quests/story_quests/shjourney/1_IntroAnimacion/timysuhermanadurmiendo-Sheet.png" id="1_5qws3"]
 [ext_resource type="Script" uid="uid://d013y37215by1" path="res://scenes/quests/story_quests/shjourney/1_IntroAnimacion/saltar_escena.gd" id="2_f6rwu"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="2_shlmy"]
 [ext_resource type="AudioStream" uid="uid://dlgyoxuwm5cgw" path="res://scenes/quests/story_quests/shjourney/2_shjourney_intro/template_intro_components/EffectSounds/slow-cinematic-clock-ticking-357979.mp3" id="3_5qskq"]
