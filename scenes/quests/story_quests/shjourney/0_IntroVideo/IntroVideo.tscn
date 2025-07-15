@@ -28,6 +28,7 @@ expand = true
 script = ExtResource("2_4m12n")
 
 [node name="CinematicaVideos" type="Node2D" parent="." node_paths=PackedStringArray("video_player")]
+position = Vector2(0, -1)
 script = ExtResource("3_4m12n")
 video_player = NodePath("../VideoStreamPlayer")
 next_scene = "uid://b8sewsfnsdw4u"

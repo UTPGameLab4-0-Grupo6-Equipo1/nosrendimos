@@ -110,6 +110,7 @@ var state: State = State.PATROLLING:
 ## Control to hold debug info that can be toggled on or off.
 @onready var debug_info: Label = %DebugInfo
 ## Handles the velocity and movement of the guard.
+@onready var fantasma_movement: GuardMovement2 = %GuardMovement2
 @onready var guard_movement: GuardMovement = %GuardMovement
 @onready var animated_sprite_2d: AnimatedSprite2D = %AnimatedSprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer

@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dua6mynlw2ptw"]
 
 [ext_resource type="Script" uid="uid://bk5ri1yoakaqp" path="res://scenes/game_elements/props/checkpoint/components/checkpoint.gd" id="1_kkoqv"]
+[ext_resource type="SpriteFrames" uid="uid://bshou7t46r4nu" path="res://scenes/quests/story_quests/shjourney/Angel/components/angel.tres" id="2_3xcwf"]
 [ext_resource type="Script" uid="uid://0enyu5v4ra34" path="res://scenes/game_elements/props/spawn_point/components/spawn_point.gd" id="2_s5d1s"]
-[ext_resource type="SpriteFrames" uid="uid://dmg1egdoye3ns" path="res://scenes/game_elements/props/checkpoint/components/knitwitch_frames_purple.tres" id="4_3xcwf"]
 [ext_resource type="PackedScene" uid="uid://p6q2uo2us0il" path="res://scenes/quests/story_quests/shjourney/light.tscn" id="4_bjlxs"]
 [ext_resource type="PackedScene" uid="uid://dutgnbiy7xalb" path="res://scenes/game_elements/props/interact_area/interact_area.tscn" id="4_cukws"]
 
@@ -12,6 +12,7 @@ radius = 48.0
 [node name="Checkpoint" type="Area2D"]
 collision_layer = 0
 script = ExtResource("1_kkoqv")
+sprite_frames = ExtResource("2_3xcwf")
 
 [node name="SpawnPoint" type="Marker2D" parent="." groups=["spawn_point"]]
 unique_name_in_owner = true
@@ -20,7 +21,7 @@ script = ExtResource("2_s5d1s")
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(0, -40)
-sprite_frames = ExtResource("4_3xcwf")
+sprite_frames = ExtResource("2_3xcwf")
 animation = &"idle"
 autoplay = "idle"
 

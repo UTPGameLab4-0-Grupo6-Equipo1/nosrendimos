@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=4 uid="uid://dyx8toyemw2vx"]
+[gd_scene load_steps=75 format=4 uid="uid://dyx8toyemw2vx"]
 
 [ext_resource type="Script" uid="uid://bb15xji6f5syf" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/ScripBase.gd" id="1_f2sr3"]
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_wjmvn"]
@@ -16,7 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="9_q6p3d"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="10_r8s28"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="12_37aoh"]
+[ext_resource type="SpriteFrames" uid="uid://dpapbnkovh2a1" path="res://scenes/quests/story_quests/shjourney/Otros_componentes/Enemigos/templateFantamas.tres" id="13_656p3"]
 [ext_resource type="Texture2D" uid="uid://5wscjc8yqqts" path="res://assets/first_party/collectibles/world_memory.png" id="16_7ve7e"]
+[ext_resource type="SpriteFrames" uid="uid://bshou7t46r4nu" path="res://scenes/quests/story_quests/shjourney/Angel/components/angel.tres" id="16_656p3"]
 [ext_resource type="Script" uid="uid://ctpayvvawhld4" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/kaenamanto.gd" id="16_mv628"]
 [ext_resource type="Resource" uid="uid://bp2nw7canjv6m" path="res://scenes/quests/story_quests/shjourney/4_Laberinto/template_stealth_components/template_collected.dialogue" id="17_c1lxt"]
 [ext_resource type="Resource" uid="uid://7g75vdxbo0nr" path="res://scenes/quests/story_quests/shjourney/Angel/components/dialogo-angel.dialogue" id="17_lldb0"]
@@ -1314,6 +1316,7 @@ position = Vector2(13, -29)
 
 [node name="Guard1-GoingBackAndForth" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_mv628")]
 position = Vector2(377, 643)
+sprite_frames = ExtResource("13_656p3")
 patrol_path = NodePath("../Guard1-PatrolPath")
 move_speed = 200.0
 
@@ -1325,6 +1328,7 @@ curve = SubResource("Curve2D_wjmvn")
 
 [node name="Guard1-GoingBackAndForth2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_mv628")]
 position = Vector2(227.685, 2787.03)
+sprite_frames = ExtResource("13_656p3")
 patrol_path = NodePath("../Guard1-PatrolPath2")
 move_speed = 200.0
 
@@ -1336,6 +1340,7 @@ curve = SubResource("Curve2D_bnvjc")
 
 [node name="Guard2-RunningInCircles" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_mv628")]
 position = Vector2(1298, 1852)
+sprite_frames = ExtResource("13_656p3")
 patrol_path = NodePath("../Guard2-RunningPath")
 wait_time = 0.3
 move_speed = 1000.0
@@ -1351,6 +1356,7 @@ curve = SubResource("Curve2D_hejm3")
 
 [node name="Guard2-RunningInCircles2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_mv628")]
 position = Vector2(1152.6, 1021.38)
+sprite_frames = ExtResource("13_656p3")
 patrol_path = NodePath("../Guard2-RunningPath2")
 wait_time = 0.3
 move_speed = 1000.0
@@ -1366,6 +1372,7 @@ y_sort_enabled = true
 
 [node name="Checkpoint" parent="Checkpoints" instance=ExtResource("6_ndujb")]
 position = Vector2(2595, 556)
+sprite_frames = ExtResource("16_656p3")
 dialogue = ExtResource("17_lldb0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint"]
@@ -1375,6 +1382,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="Checkpoint2" parent="Checkpoints" instance=ExtResource("6_ndujb")]
 position = Vector2(1458, 1812)
+sprite_frames = ExtResource("16_656p3")
 dialogue = ExtResource("17_lldb0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint2"]
@@ -1384,6 +1392,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="Checkpoint3" parent="Checkpoints" instance=ExtResource("6_ndujb")]
 position = Vector2(3453, 1077)
+sprite_frames = ExtResource("16_656p3")
 dialogue = ExtResource("17_lldb0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint3"]
@@ -1393,6 +1402,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="Checkpoint5" parent="Checkpoints" instance=ExtResource("6_ndujb")]
 position = Vector2(3921, 254)
+sprite_frames = ExtResource("16_656p3")
 dialogue = ExtResource("17_lldb0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint5"]
@@ -1402,6 +1412,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="Checkpoint4" parent="Checkpoints" instance=ExtResource("6_ndujb")]
 position = Vector2(287, 3572)
+sprite_frames = ExtResource("16_656p3")
 dialogue = ExtResource("17_lldb0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint4"]
@@ -1476,10 +1487,7 @@ one_shot = true
 
 [node name="ScreamPlayer" type="AudioStreamPlayer2D" parent="kaenamanto"]
 stream = ExtResource("21_s8djp")
-volume_db = 9.904
-
-[node name="Node2D" parent="kaenamanto" instance=ExtResource("7_bolto")]
-scale = Vector2(4.655, 4.655)
+volume_db = 2.5
 
 [node name="Sounds" type="Node2D" parent="."]
 

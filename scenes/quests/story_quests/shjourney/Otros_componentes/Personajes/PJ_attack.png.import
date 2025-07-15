@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv2pn30s2y5ep"
-path="res://.godot/imported/TX Tileset Grass.png-c27ab9cf38dcc9afaac468f63e585c73.ctex"
+uid="uid://bvail5c23aexi"
+path="res://.godot/imported/PJ_attack.png-c3af13f57d807cf30db8231ae0ae12c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/third_party/tiny-swords/Terrain/Ground/TX Tileset Grass.png"
-dest_files=["res://.godot/imported/TX Tileset Grass.png-c27ab9cf38dcc9afaac468f63e585c73.ctex"]
+source_file="res://scenes/quests/story_quests/shjourney/Otros_componentes/Personajes/PJ_attack.png"
+dest_files=["res://.godot/imported/PJ_attack.png-c3af13f57d807cf30db8231ae0ae12c5.ctex"]
 
 [params]
 

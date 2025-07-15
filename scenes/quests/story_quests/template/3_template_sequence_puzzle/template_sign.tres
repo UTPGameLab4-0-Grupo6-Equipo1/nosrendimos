@@ -1,6 +1,10 @@
-[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://b5pj1pt7r6hdg"]
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://b5pj1pt7r6hdg"]
 
 [ext_resource type="Texture2D" uid="uid://muxw35q6mhag" path="res://scenes/quests/story_quests/shjourney/6_Espada/stella_outro_components/espada_sprite-removebg-preview.png" id="1_gyg3u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyg3u"]
+atlas = ExtResource("1_gyg3u")
+region = Rect2(0, 0, 122, 408)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2057h"]
 atlas = ExtResource("1_gyg3u")
@@ -26,7 +30,7 @@ region = Rect2(488, 0, 122, 408)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2057h")
+"texture": SubResource("AtlasTexture_gyg3u")
 }],
 "loop": false,
 "name": &"hint",
