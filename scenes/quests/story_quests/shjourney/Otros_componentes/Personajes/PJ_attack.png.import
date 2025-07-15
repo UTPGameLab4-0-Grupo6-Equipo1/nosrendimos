@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3hbfv3taq5oe"
-path="res://.godot/imported/tim y su hermana durmiendo-Sheet.png-3ec4c7cc369c83860aa3b1cf52210a69.ctex"
+uid="uid://bvail5c23aexi"
+path="res://.godot/imported/PJ_attack.png-c3af13f57d807cf30db8231ae0ae12c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/shjourney/1_IntroAnimacion/tim y su hermana durmiendo-Sheet.png"
-dest_files=["res://.godot/imported/tim y su hermana durmiendo-Sheet.png-3ec4c7cc369c83860aa3b1cf52210a69.ctex"]
+source_file="res://scenes/quests/story_quests/shjourney/Otros_componentes/Personajes/PJ_attack.png"
+dest_files=["res://.godot/imported/PJ_attack.png-c3af13f57d807cf30db8231ae0ae12c5.ctex"]
 
 [params]
 
