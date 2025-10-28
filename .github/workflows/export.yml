@@ -92,7 +92,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download PCK
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: pck
 
